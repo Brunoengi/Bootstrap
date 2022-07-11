@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <link href="./app.css" rel="stylesheet">
+</head>
+<body>
+    <!--Existem classes para a div da linha que modifica o comportamento de todas as divs de coluna, o primeiro caso que veremos é uma classe que limita a quantidade máxima de divs colunas ao longo da largura-->
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col">C</div>
+            <div class="col">D</div>
+            <div class="col">E</div>
+        </div>
+    </div>
+
+    <!--Nesse caso, a largura de cada coluna será automaticamente definida com base na largura do conteúdo, sendo que não há limite quanto a quantidade de divs em uma mesma linha, a partir do momento em que não couber haverá uma quebra-->
+    <div class="container">
+        <div class="row row-cols-auto">
+            <div class="col">A</div>
+            <div class="col">B</div>
+            <div class="col">C</div>
+            <div class="col">D</div>
+            <div class="col">E</div>
+        </div>
+    </div>
+
+    <!--Nesse caso, a div row tem uma classe redundante (desnecessária) pois a determinação da largura (col-2) tem prioridade sobre a determinação das colunas determinada na linha (row-cols-auto)-->
+    <div class="container">
+        <div class="row row-cols-auto">
+            <div class="col-2">A</div>
+            <div class="col-2">B</div>
+            <div class="col-2">C</div>
+            <div class="col-2">D</div>
+            <div class="col-2">E</div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="../../bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -5,128 +5,35 @@
     <title>Document</title>
     <link href="../../bootstrap.min.css" rel="stylesheet">
     <link href="./app.css" rel="stylesheet">
+    <link href="../../bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 
-    <!--Como só há um elemento .col na linha, ele irá ocupar todo o espaço disponível-->
+    <!--Nesse caso, cada elemento ocupará 50% da coluna-->
     <div class="container">
         <div class="row">
-            <div class="col">
-                COL
-            </div>
+            <div class="col-6">A</div>
+            <div class="col-6">B</div>
         </div>
     </div>
 
-    <!--Como só há dois elementos .col na linha, cada um ocupará 50% da linha-->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                COL
-            </div>
-            <div class="col">
-                COL
-            </div>
-        </div>
-    </div>
-
-    <!--Tradicionalmente o bootstrap organiza o layout em 12 colunas, entretando se só houver classe col essa regra não ocorre-->
-    <div class="container">
-        <div class="row">
-
-            <div class="col">1</div>
-            <div class="col">2</div>
-            <div class="col">3</div>
-            <div class="col">4</div>
-            <div class="col">5</div>
-            <div class="col">6</div>
-            <div class="col">7</div>
-            <div class="col">8</div>
-            <div class="col">9</div>
-            <div class="col">10</div>
-            <div class="col">11</div>
-            <div class="col">12</div>
-            <div class="col">13</div>
-            
-        </div>
-    </div>
-
-    <!--Tradicionalmente o bootstrap organiza o layout em 12 colunas, para que ocorra a quebra utilizasse col-1 -->
+        <!--Nesse caso, cada elemento terá 50% da tela, desde que a tela seja maior que (sm), se for menor o comportamento muda e cada elemento ocupa 100%-->
         <div class="container">
-        <div class="row">
-
-            <div class="col-1">1</div>
-            <div class="col-1">2</div>
-            <div class="col-1">3</div>
-            <div class="col-1">4</div>
-            <div class="col-1">5</div>
-            <div class="col-1">6</div>
-            <div class="col-1">7</div>
-            <div class="col-1">8</div>
-            <div class="col-1">9</div>
-            <div class="col-1">10</div>
-            <div class="col-1">11</div>
-            <div class="col-1">12</div>
-            <div class="col-1">13</div>
-            
+            <div class="row">
+                <div class="col-sm-6">A</div>
+                <div class="col-sm-6">B</div>
+            </div>
         </div>
-    </div>
 
-    <!--É possivel escolher quantos espaços a div irá ocupar -->
-    <div class="container">
-        <div class="row">
-
-            <div class="col-6">1</div>
-            <div class="col-3">2</div>
-            <div class="col-3">3</div>
-
-            
+        <!--Nesse caso, quando o conteúdo for acima de large a divisão será de 1/3 para cada elemento, quando o valor reduzir para médio havera uma quebra, o primeiro elemento está em toda a largura, enquanto o elemento 2 e 3 estarão abaixo, cada um com metade da largura disponível, quando a tela tem largura small a disposição será que o primeiro e o segundo elemento estarão ocupando a primeira camada com metade cada e o terceiro elemento estará elogo abaixo ocupando toda a largura-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-6">A</div>
+                <div class="col-lg-4 col-md-6 col-sm-6">B</div>
+                <div class="col-lg-4 col-md-6 col-sm-12">B</div>
+            </div>
         </div>
-    </div>
-
-    <!--Não há qualquer impedimento quanto a utilizar menos colunas, nesse caso haverá um espaço vazio, nesse caso por exemplo as colunas somam 11 ao invés de 12 -->
-    <div class="container">
-        <div class="row">
-
-            <div class="col-6">1</div>
-            <div class="col-3">2</div>
-            <div class="col-2">3</div>
-        </div>
-    </div>
-
-    <!--Se houver mais colunas que os 12 espaços, a partir da 12 haverá uma quebra, nesse caso as 3 primeiras divs ficaram na mesma linha e haverá um espaço vazio, enquanto na próxima linha estará apenas a quarta div ocupando 2 espaços de 12 (haverão 10 espaços vazios)-->
-    <div class="container">
-        <div class="row">
-
-            <div class="col-6">1</div>
-            <div class="col-3">2</div>
-            <div class="col-2">3</div>
-            <div class="col-2">3</div>
-        </div>
-    </div>
-
-    <!--Nesse caso quando o tamanho da tela tem mais pixels que "large" a regra será exatamente igual ao anterior, entretando, quando a tela diminui mais haverá uma quebra e ambos os conteúdos terão uma linha para cada-->
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-6">1</div>
-            <div class="col-lg-4">2</div>
-
-        </div>
-    </div>
-        
-    <!--Ainda não entendi-->
-    <div class="container">
-        <div class="row">
-
-            <div class="col-lg-8 col-sm-6">1</div>
-            <div class="col-lg-4 col-sm-6">2</div>
-
-        </div>
-    </div>
-        
-
-
-
+    
     <script src="../../bootstrap.bundle.min.js"></script>
   </body>
 </html>
