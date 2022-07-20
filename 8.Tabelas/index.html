@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../../bootstrap.min.css" rel="stylesheet">
+    <link href="./app.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Para se utilizar a formatação de tabelas deve-se atentar que a estrutura básica deve estar corretamente inserida, com as tags: thead,tr,th para descrever o cabelaçho e as tags: tbody,tr,td para descrevero corpo.... pode-se obcionalmente adicionar as tags tfoot,tr,td-->
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Existem classes para inserir uma cor em toda a tabela. No lugar de table-info pode-ser utilizar uma série de outras classes-->
+<table class="table table-info">
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Pode-se utilizar o efeito de zebra na tabela-->
+<table class="table table-striped ">
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Existem outras classes que podem ser adicionadas no efeito de zebra, como o table-dark -->
+<table class="table table-dark table-striped ">
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--É possível adiicionar uma classe com efeito de hover que modifica a cor quando o curso está em cima-->
+<table class="table table-hover table-striped ">
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Pode-se ainda adicionar bordas para delimitar as colunas da tabela com a classe table-bordered-->
+<table class="table table-hover table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Pode-se adicionar classes apenas no thead para proporcionar um destaque com relação ao corpo da tabela, nesse caso usamos a classe table-dark para modificar a cor de fundo e a cor da fonte (a classe faz ambos)-->
+<table class="table table-hover table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Existem funcionalidades de formatação do tamanho da linha, com a classe table-sm há uma redução do padding do elemento -->
+<table class="table table-hover table-striped table-bordered table-sm">
+    <thead class="table-dark">
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Pode-se fazer o alinhamento tanto nas colunas individualmente quando nas linhas (aplicando em tudo o que tiver dentro), quanto no thead ou tbody quanto na tabela como um todo, nesse caso vamos usar o text-center na tag table e isso aplicará então para todos os textos dentro da tabela -->
+<table class="table table-hover table-striped table-bordered table-sm text-center">
+    <thead class="table-dark">
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Agora iremos aplicar a formatação de texto distinta para cada coluna, pode-se fazer o mesmo para outras tags -->
+<table class="table table-hover table-striped table-bordered table-sm text-center">
+    <thead class="table-dark">
+        <tr>
+            <th class="text-center">Título 1</th>
+            <th class="text-start">Título 2</th>
+            <th class="text-end">Título 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dado 1</td>
+            <td>Dado 2</td>
+            <td>Dado 3</td>
+        </tr>
+        <tr>
+            <td>Dado 4</td>
+            <td>Dado 5</td>
+            <td>Dado 6</td>
+        </tr>
+        <tr>
+            <td>Dado 7</td>
+            <td>Dado 8</td>
+            <td>Dado 9</td>
+        </tr>
+    </tbody>
+</table>
+
+
+    <script src="../../bootstrap.bundle.min.js"></script>
+</body>
+</html>
